@@ -1,7 +1,5 @@
 /** @format */
 
-import React from "react";
-
 const MenuItem = ({ item }) => {
   const { image, price, recipe, name } = item;
   return (
