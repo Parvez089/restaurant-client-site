@@ -12,10 +12,10 @@ const MenuItem = ({ item }) => {
           alt=''
         />
         <div>
-          <h3 className='uppercase'>{name}</h3>
+          <h3 className='uppercase font-bold'>{name}</h3>
           <p>{recipe}</p>
         </div>
-        <p className='text-yellow-400'>${price}</p>
+        <p className='text-[#CD9003] font-bold'>${price}</p>
       </div>
     </section>
   );
