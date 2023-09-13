@@ -5,14 +5,18 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const navOptions = (
     <>
-      <li>
+      <li className='hover:bg-white'>
         <Link to='/'>Home</Link>
       </li>
       <li>
-        <Link to='menu'>Our Menu</Link>
+        <Link to='/menu' className='hover:bg-white'>
+          Our Menu
+        </Link>
       </li>
       <li>
-        <Link>Item 1</Link>
+        <Link to='/order/salad' className='hover:bg-white'>
+          Order
+        </Link>
       </li>
     </>
   );
@@ -37,7 +41,7 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className='menu menu-sm dropdown-content text-white mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 '>
+            className='menu menu-sm dropdown-content  mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 '>
             {navOptions}
           </ul>
         </div>
@@ -46,9 +50,7 @@ const NavBar = () => {
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal   px-1'>{navOptions}</ul>
       </div>
-      <div className='navbar-end '>
-        <a className='btn'>Button</a>
-      </div>
+      <div className='navbar-end '>{/* <a className='btn '>Button</a> */}</div>
     </div>
   );
 };

@@ -7,8 +7,9 @@ const Cover = ({ img, title }) => {
       blur={{ min: -50, max: 50 }}
       bgImage={img}
       bgImageAlt='the dog'
-      strength={-200}>
-      <div className='hero h-[700px]'>
+      strength={-200}
+      className='md:lg:visible lg:md:top-0 top-16'>
+      <div className='hero lg:md:h-[700px] '>
         <div className='hero-overlay bg-opacity-60'></div>
         <div className='hero-content text-center text-neutral-content'>
           <div className='max-w-md'>
