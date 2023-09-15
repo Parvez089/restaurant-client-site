@@ -13,11 +13,13 @@ const Home = () => {
       <Helmet>
         <title> Bistro | Home </title>
       </Helmet>
-      <Banner></Banner>
-      <Category></Category>
-      <PopularMenu></PopularMenu>
-      <Featured></Featured>
-      <Testimonials></Testimonials>
+      <div className='max-w-screen-xl mx-auto'>
+        <Banner></Banner>
+        <Category></Category>
+        <PopularMenu></PopularMenu>
+        <Featured></Featured>
+        <Testimonials></Testimonials>
+      </div>
     </div>
   );
 };
